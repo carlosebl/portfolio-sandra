@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 24px 0;
   background-color: ${colors.whiteBg};
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.1);
 
   h1 {
     color: ${colors.secondaryText};

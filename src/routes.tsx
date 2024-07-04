@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 
 import Home from './Pages/Home'
-import Projects from './Pages/Projects'
 import Trajectory from './Pages/Trajectory'
+import Projects from './Pages/Projects'
 
 const PageRoutes = () => (
   <Routes>

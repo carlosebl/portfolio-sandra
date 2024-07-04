@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { ProjectCards, ProjectsContainer, ProjectsTitle } from './styles'
 
 import coracao from '../../assets/images/coracao_small.png'
@@ -7,10 +9,10 @@ const ProjectsSection = () => (
   <ProjectsContainer>
     <ProjectsTitle>
       <h3>Projetos</h3>
-      <a href="#">
+      <Link to={'/projects'}>
         <p>Mais</p>
         <img src={coracao} />
-      </a>
+      </Link>
     </ProjectsTitle>
     <ProjectCards>
       <Card />
