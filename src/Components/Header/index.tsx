@@ -13,7 +13,7 @@ const Header = () => (
           <a href="#">Trajetória</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <Link to={'/projects'}>Projetos</Link>
         </li>
         <li>
           <a href="#">Sobre mim</a>
