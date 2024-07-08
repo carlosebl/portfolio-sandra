@@ -15,7 +15,7 @@ const Cva = () => (
       <ProjectIntro />
       <CoverImg src={cover1} />
       <ChipsContainer>
-        <Chip>Design strategy</Chip>
+        <Chip>Design Strategy</Chip>
         <Chip>Results oriented</Chip>
         <Chip>Product Design</Chip>
         <Chip>EX Design</Chip>
