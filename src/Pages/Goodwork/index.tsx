@@ -2,11 +2,11 @@ import Footer from '../../Components/Footer'
 import ProjectIntro from '../../Components/ProjectIntro'
 import {
   Challenge,
-  Characters,
   CoverImg,
   GoodworkSection,
   Paragraph,
-  Title
+  Title,
+  TwoCols
 } from './styles'
 
 import cover1 from '../../assets/images/goodwork3.png'
@@ -35,7 +35,7 @@ const Goodwork = () => (
         <Chip>SaaS</Chip>
         <Chip>B2C</Chip>
       </ChipsContainer>
-      <Characters>
+      <TwoCols>
         <img src={characters} alt="Characters" />
         <div>
           <Title>De seis personagens a um propósito único</Title>
@@ -51,7 +51,7 @@ const Goodwork = () => (
             empresas.
           </Paragraph>
         </div>
-      </Characters>
+      </TwoCols>
       <Challenge>
         <Title>O desafio de conquistar corações e mentes: lançando o MVP</Title>
         <div>

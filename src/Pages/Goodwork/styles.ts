@@ -19,7 +19,7 @@ export const Paragraph = styled.p`
   letter-spacing: 0.1px;
 `
 
-export const Characters = styled.section`
+export const TwoCols = styled.section`
   padding-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
