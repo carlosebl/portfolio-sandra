@@ -4,6 +4,10 @@ import { colors } from '../../styles'
 export const ProjectsContainer = styled.section`
   padding: 80px;
   background-color: ${colors.yellowBg};
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const ProjectsTitle = styled.div`

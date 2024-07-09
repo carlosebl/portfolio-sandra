@@ -19,7 +19,22 @@ import { Chip, ChipsContainer } from '../../Components/Chips/styles'
 const Goodwork = () => (
   <>
     <div className="container">
-      <ProjectIntro />
+      <ProjectIntro
+        title={
+          <p>
+            Transformando a saúde mental no trabalho:
+            <br />A jornada do GoodWork Valou
+          </p>
+        }
+        description={
+          'Imagine um aplicativo que não só ajuda indivíduos a gerenciarem sua saúde mental no trabalho, mas também permite que empresas monitorem e melhorem a cultura do ambiente corporativo. Essa foi a missão do GoodWork Valou, e transformar essa visão em realidade exigiu uma jornada repleta de desafios, colaboração intensa e muita criatividade.'
+        }
+        system={'App IOS e Android'}
+        year={'2023/2024'}
+        company={
+          'Bridge Management Technologies® e empresas parceiras. (Site do projeto)'
+        }
+      />
       <CoverImg src={cover1} alt="Cover" />
       <ChipsContainer>
         <Chip>Design Strategy</Chip>

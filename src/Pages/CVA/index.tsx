@@ -12,7 +12,20 @@ import Footer from '../../Components/Footer'
 const Cva = () => (
   <>
     <div className="container">
-      <ProjectIntro />
+      <ProjectIntro
+        title={
+          <p>
+            Buscando simplicidade na análise de mercado:
+            <br />o caso do Customer Value Analysis
+          </p>
+        }
+        description={
+          'Transformar uma ferramenta complexa em algo intuitivo e eficaz é um grande desafio. No projeto de redesign do Customer Value Analysis (CVA) pela Bridge Management Technologies®, usamos uma versão antiga e feedbacks dos clientes como base. Nossa missão era modernizar e otimizar a funcionalidade para atender às altas expectativas dos analistas especializados que utilizam a metodologia.'
+        }
+        system={'Web app desktop'}
+        year={'2022/2023'}
+        company={'Bridge Management Technologies®'}
+      />
       <CoverImg src={cover1} />
       <ChipsContainer>
         <Chip>Design Strategy</Chip>

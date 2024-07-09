@@ -1,35 +1,39 @@
-import { ProjectsContainer } from '../ProjectsSection/styles'
-import { ProjectCoverImg, ProjectDetails, ProjectTitle } from './styles'
+import {
+  ProjectContainer,
+  ProjectCoverImg,
+  ProjectDetails,
+  ProjectTitle
+} from './styles'
 
-import goodwork from '../../assets/images/goodwork2.png'
+export type Props = {
+  img: string
+  title: JSX.Element
+  system: string
+  year: string
+  company: string
+  background: 'yellow' | 'blue'
+}
 
-const Project = () => (
+const Project = ({ img, title, system, year, company, background }: Props) => (
   <div className="container">
-    <ProjectsContainer>
-      <ProjectCoverImg src={goodwork} alt="Goodwork" />
-      <ProjectTitle>
-        Transformando a saúde mental no trabalho:
-        <br />A jornada do GoodWork Valou
-      </ProjectTitle>
+    <ProjectContainer background={background}>
+      <ProjectCoverImg src={img} alt="" />
+      <ProjectTitle>{title}</ProjectTitle>
       <ProjectDetails>
         <div>
           <h4>TIPO</h4>
-          <p>App IOS a Android</p>
+          <p>{system}</p>
         </div>
         <div>
           <h4>ANO</h4>
-          <p>2023/2024</p>
+          <p>{year}</p>
         </div>
         <div>
           <h4>EMPRESA</h4>
-          <p>
-            Bridge Management Technologies® e empresas
-            <br />
-            parceiras. (Site do projeto)
-          </p>
+          <p>{company}</p>
         </div>
       </ProjectDetails>
-    </ProjectsContainer>
+    </ProjectContainer>
   </div>
 )
 

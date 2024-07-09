@@ -1,6 +1,18 @@
 import styled from 'styled-components'
 
 import { colors } from '../../styles'
+import { Props } from '.'
+
+export const ProjectContainer = styled.section<
+  Omit<Props, 'img' | 'title' | 'system' | 'year' | 'company'>
+>`
+  padding: 80px;
+  background-color: ${(props) =>
+    props.background === 'yellow' ? colors.yellowBg : colors.blueBg};
+
+  color: ${(props) =>
+    props.background === 'yellow' ? colors.primaryText : colors.whiteBg};
+`
 
 export const ProjectCoverImg = styled.img`
   max-width: 100%;
@@ -9,7 +21,6 @@ export const ProjectCoverImg = styled.img`
 `
 
 export const ProjectTitle = styled.h3`
-  color: ${colors.primaryText};
   font-size: 48px;
   font-weight: 500;
   line-height: 72px;
@@ -20,7 +31,6 @@ export const ProjectTitle = styled.h3`
 export const ProjectDetails = styled.div`
   display: flex;
   justify-content: space-between;
-  color: ${colors.secondaryText};
 
   h4 {
     font-size: 16px;

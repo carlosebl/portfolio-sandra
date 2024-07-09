@@ -10,7 +10,20 @@ import Footer from '../../Components/Footer'
 const DesignSystem = () => (
   <>
     <div className="container">
-      <ProjectIntro />
+      <ProjectIntro
+        title={
+          <p>
+            Unificando experiências:
+            <br />a jornada do design system do Bridge One®
+          </p>
+        }
+        description={
+          'Transformar uma plataforma complexa em uma experiência coesa e visualmente agradável, onde cada componente se integra harmoniosamente com o próximo, foi a missão do projeto do design system do Bridge One®, uma plataforma robusta para gerenciamento de empresas. Alcançar essa unificação visual e funcional exigiu um esforço concentrado, colaboração intensa e uma abordagem meticulosa.'
+        }
+        system={'Design system'}
+        year={'2021/2023'}
+        company={'Bridge Management Technologies®'}
+      />
       <CoverImg src={cover1} />
       <ChipsContainer>
         <Chip>Design Strategy</Chip>

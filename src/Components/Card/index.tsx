@@ -1,18 +1,20 @@
 import { CardContainer, CardInfo } from './syles'
 import { Chip } from '../Chips/styles'
 
-import goodwork from '../../assets/images/goodwork1.png'
+type Props = {
+  img: string
+  title: string
+  year: string
+  description: string
+}
 
-const Card = () => (
+const Card = ({ img, title, year, description }: Props) => (
   <CardContainer>
-    <img src={goodwork} />
+    <img src={img} />
     <CardInfo>
-      <h4>A jornada do GoodWork Valou</h4>
-      <Chip>2023/24</Chip>
-      <p>
-        O desafio de criação de um aplicativo de gerenciamento de clima
-        empresarial.
-      </p>
+      <h4>{title}</h4>
+      <Chip>{year}</Chip>
+      <p>{description}</p>
     </CardInfo>
   </CardContainer>
 )
