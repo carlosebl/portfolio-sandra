@@ -1,10 +1,12 @@
-import AboutMe from '../../Components/AboutMe'
+import AboutMe from '../../Components/portuguese/AboutMe'
 import Chips from '../../Components/Chips'
-import Intro from '../../Components/Intro'
-import ProjectsSection from '../../Components/ProjectsSection'
+import Intro from '../../Components/portuguese/Intro'
+import ProjectsSection from '../../Components/portuguese/ProjectsSection'
+import Header from '../../Components/portuguese/Header'
 
 const Home = () => (
   <div className="container">
+    <Header />
     <Intro />
     <Chips />
     <ProjectsSection />

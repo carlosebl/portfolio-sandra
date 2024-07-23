@@ -1,15 +1,17 @@
-import ProjectIntro from '../../Components/ProjectIntro'
+import ProjectIntro from '../../Components/portuguese/ProjectIntro'
 import { CoverImg, Paragraph, Title, TwoCols } from '../Goodwork/styles'
 import { Chip, ChipsContainer } from '../../Components/Chips/styles'
+import Footer from '../../Components/portuguese/Footer'
+import Header from '../../Components/portuguese/Header'
 
 import cover1 from '../../assets/images/ds2.png'
 import cover2 from '../../assets/images/ds3.png'
 import img1 from '../../assets/images/ds4.png'
-import Footer from '../../Components/Footer'
 
 const DesignSystem = () => (
   <>
     <div className="container">
+      <Header />
       <ProjectIntro
         title={
           <p>
@@ -121,8 +123,8 @@ const DesignSystem = () => (
           </Paragraph>
         </div>
       </TwoCols>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

@@ -1,38 +1,38 @@
 import { Link } from 'react-router-dom'
-import Footer from '../../Components/portuguese/Footer'
-import Project from '../../Components/portuguese/Project'
-
 import goodwork from '../../assets/images/goodwork2.png'
 import cva from '../../assets/images/cva7.png'
 import ds from '../../assets/images/ds5.png'
-import Header from '../../Components/portuguese/Header'
+import HeaderEnglish from '../../Components/english/HeaderEnglish'
+import FooterEnglish from '../../Components/english/FooterEnglish'
+import ProjectEnglish from '../../Components/english/ProjectEnglish'
 
-const Projects = () => (
+const ProjectsEnglish = () => (
   <>
     <div className="container">
-      <Header />
-      <Project
+      <HeaderEnglish />
+      <ProjectEnglish
         img={goodwork}
         title={
-          <Link to={'/goodwork'}>
+          <Link to={'/goodwork_english'}>
             <p>
-              Transformando a saúde mental no trabalho:
-              <br />A jornada do GoodWork Valou
+              Transforming mental health at work:
+              <br />
+              The GoodWork Valou journey
             </p>
           </Link>
         }
         system={'App IOS e Android'}
         year={'2023/2024'}
-        company={'Bridge Management Technologies® e empresas parceiras.'}
+        company={'Bridge Management Technologies® and partners.'}
         background={'yellow'}
       />
-      <Project
+      <ProjectEnglish
         img={cva}
         title={
-          <Link to={'/cva'}>
+          <Link to={'/cva_english'}>
             <p>
-              Buscando simplicidade na análise de mercado:
-              <br />o caso do Customer Value Analysis
+              Searching for simplicity in market analysis: the case of Customer
+              Value Analysis
             </p>
           </Link>
         }
@@ -41,15 +41,11 @@ const Projects = () => (
         company={'Bridge Management Technologies®'}
         background={'blue'}
       />
-      <Project
+      <ProjectEnglish
         img={ds}
         title={
-          <Link to={'/design-system'}>
-            <p>
-              Unificando experiências: a jornada do design
-              <br />
-              system do Bridge One®
-            </p>
+          <Link to={'/design-system_english'}>
+            <p>Unifying Experiences: The Bridge One® Design System Journey</p>
           </Link>
         }
         system={'Design System'}
@@ -57,9 +53,9 @@ const Projects = () => (
         company={'Bridge Management Technologies®'}
         background={'yellow'}
       />
-      <Footer />
+      <FooterEnglish />
     </div>
   </>
 )
 
-export default Projects
+export default ProjectsEnglish

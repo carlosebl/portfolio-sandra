@@ -1,4 +1,4 @@
-import ProjectIntro from '../../Components/ProjectIntro'
+import ProjectIntro from '../../Components/portuguese/ProjectIntro'
 import { Chip, ChipsContainer } from '../../Components/Chips/styles'
 import { CoverImg, Paragraph, Title, TwoCols } from '../Goodwork/styles'
 
@@ -7,11 +7,13 @@ import cover2 from '../../assets/images/cva4.png'
 import cover3 from '../../assets/images/cva5.png'
 import cover4 from '../../assets/images/cva6.png'
 import img2 from '../../assets/images/cva3.png'
-import Footer from '../../Components/Footer'
+import Footer from '../../Components/portuguese/Footer'
+import Header from '../../Components/portuguese/Header'
 
 const Cva = () => (
   <>
     <div className="container">
+      <Header />
       <ProjectIntro
         title={
           <p>
@@ -113,8 +115,8 @@ const Cva = () => (
           </Paragraph>
         </div>
       </TwoCols>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

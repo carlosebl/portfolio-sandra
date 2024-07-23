@@ -1,5 +1,5 @@
-import Footer from '../../Components/Footer'
-import ProjectIntro from '../../Components/ProjectIntro'
+import Footer from '../../Components/portuguese/Footer'
+import ProjectIntro from '../../Components/portuguese/ProjectIntro'
 import {
   Challenge,
   CoverImg,
@@ -15,10 +15,12 @@ import cover3 from '../../assets/images/goodwork7.png'
 import characters from '../../assets/images/goodwork4.png'
 import fluxogram from '../../assets/images/goodwork6.png'
 import { Chip, ChipsContainer } from '../../Components/Chips/styles'
+import Header from '../../Components/portuguese/Header'
 
 const Goodwork = () => (
   <>
     <div className="container">
+      <Header />
       <ProjectIntro
         title={
           <p>
@@ -152,8 +154,8 @@ const Goodwork = () => (
           </Paragraph>
         </div>
       </GoodworkSection>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

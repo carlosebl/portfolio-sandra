@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { GlobalStyles } from './styles'
 
-import Header from './Components/Header'
+import Header from './Components/portuguese/Header'
 import PageRoutes from './routes'
 
 function App() {
@@ -9,9 +9,6 @@ function App() {
     <>
       <BrowserRouter>
         <GlobalStyles />
-        <div className="container">
-          <Header />
-        </div>
         <PageRoutes />
       </BrowserRouter>
     </>
