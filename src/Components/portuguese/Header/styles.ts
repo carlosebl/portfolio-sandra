@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 type Props = {
   isActive: boolean
@@ -16,12 +16,23 @@ export const HeaderContainer = styled.header`
   background-color: ${colors.whiteBg};
   box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.1);
 
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 100%;
+    padding: 24px;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
   h1 {
     color: ${colors.secondaryText};
     font-size: 20px;
     font-weight: normal;
     line-height: 32px;
     letter-spacing: 0.1px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      display: none;
+    }
   }
 
   nav {
@@ -37,6 +48,10 @@ export const HeaderContainer = styled.header`
     line-height: 32px;
     letter-spacing: 0.1px;
 
+    @media (max-width: ${breakpoints.desktop}) {
+      font-size: 32px;
+    }
+
     &:hover {
       color: ${colors.primaryText};
     }
@@ -48,6 +63,10 @@ export const MainMenu = styled.ul`
 
   li {
     margin-right: 48px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      margin-right: px;
+    }
   }
 `
 
