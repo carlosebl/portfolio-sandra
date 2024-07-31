@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const ChipsContainer = styled.section`
   padding: 0px 80px 80px 80px;
@@ -9,6 +9,10 @@ export const ChipsContainer = styled.section`
   align-self: stretch;
   gap: 24px;
   flex-wrap: wrap;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    display: none;
+  }
 `
 export const Chip = styled.div`
   display: flex;

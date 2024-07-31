@@ -1,10 +1,15 @@
 import { styled } from 'styled-components'
 
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 export const IntroContainer = styled.section`
   width: 100%;
   padding: 116px 80px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 100%;
+    padding: 116px 20px;
+  }
 
   h3 {
     color: ${colors.secondaryText};
@@ -24,15 +29,29 @@ export const SloganContainer = styled.div`
     font-weight: normal;
     line-height: 112px;
     letter-spacing: 0.96px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      font-size: 56px;
+      line-height: 72px;
+      letter-spacing: 0.28px;
+    }
   }
 `
 
 export const Asterisco = styled.img`
   margin-top: -12px;
   margin-left: 490px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-left: 300px;
+  }
 `
 
 export const Coracao = styled.img`
   margin-bottom: -24px;
   margin-left: 856px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-left: 300px;
+  }
 `

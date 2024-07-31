@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 type Props = {
   isActive: boolean
@@ -16,17 +16,29 @@ export const HeaderContainer = styled.header`
   background-color: ${colors.whiteBg};
   box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.1);
 
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 100%;
+    padding: 20px;
+  }
+
   h1 {
     color: ${colors.secondaryText};
     font-size: 20px;
     font-weight: normal;
     line-height: 32px;
     letter-spacing: 0.1px;
+    margin-right: 800px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      display: none;
+      margin-right: 0;
+    }
   }
 
   nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 
   a {
@@ -36,6 +48,10 @@ export const HeaderContainer = styled.header`
     font-weight: normal;
     line-height: 32px;
     letter-spacing: 0.1px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 16px;
+    }
 
     &:hover {
       color: ${colors.primaryText};
@@ -62,8 +78,16 @@ export const LanguageMenuItem = styled.li<Props>`
   background-color: ${(props) =>
     props.isActive ? `${colors.yellowBg}` : `${colors.whiteBg}`};
 
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 1px 6px;
+  }
+
   a {
     font-weight: ${(props) => (props.isActive ? 'bold' : 'normal')};
     letter-spacing: ${(props) => (props.isActive ? '0.14px' : '0.1px')};
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 16px;
+    }
   }
 `

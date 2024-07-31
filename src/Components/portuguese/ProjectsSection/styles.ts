@@ -1,9 +1,13 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 export const ProjectsContainer = styled.section`
   padding: 80px;
   background-color: ${colors.yellowBg};
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 20px;
+  }
 
   a {
     text-decoration: none;
@@ -16,6 +20,11 @@ export const ProjectsTitle = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    padding: 20px;
+  }
 
   h3 {
     color: ${colors.primaryText};
@@ -46,4 +55,8 @@ export const ProjectCards = styled.div`
   margin: 0;
   display: flex;
   justify-content: center;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
 `
