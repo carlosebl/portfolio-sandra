@@ -9,10 +9,10 @@ import {
 
 const Header = () => (
   <HeaderContainer>
+    <Link to={'/'}>
+      <h1>Sandra Bordini</h1>
+    </Link>
     <nav>
-      <Link to={'/'}>
-        <h1>Sandra Bordini</h1>
-      </Link>
       <MainMenu>
         <li>
           <Link to={'/projects'}>Projetos</Link>
