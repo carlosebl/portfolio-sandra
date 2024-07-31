@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 import { Props } from '.'
 
 export const ProjectContainer = styled.section<
@@ -12,12 +12,22 @@ export const ProjectContainer = styled.section<
 
   color: ${(props) =>
     props.background === 'yellow' ? colors.primaryText : colors.whiteBg};
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    padding: 20px;
+  }
 `
 
 export const ProjectCoverImg = styled.img`
   max-width: 100%;
   margin-top: 80px;
   margin-bottom: 40px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 430px;
+    object-fit: cover;
+  }
 `
 
 export const ProjectTitle = styled.h3<
@@ -28,6 +38,13 @@ export const ProjectTitle = styled.h3<
   line-height: 72px;
   letter-spacing: 0.28px;
   margin-bottom: 24px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+  }
 
   a {
     text-decoration: none;
@@ -40,6 +57,10 @@ export const ProjectDetails = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
+
   h4 {
     font-size: 16px;
     font-weight: 700;
@@ -51,5 +72,9 @@ export const ProjectDetails = styled.div`
   p {
     line-height: 20px;
     letter-spacing: 0.08px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-bottom: 24px;
+    }
   }
 `
