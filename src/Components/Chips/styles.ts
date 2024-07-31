@@ -11,7 +11,7 @@ export const ChipsContainer = styled.section`
   flex-wrap: wrap;
 
   @media (max-width: ${breakpoints.desktop}) {
-    display: none;
+    padding: 0px 12px 80px 12px;
   }
 `
 export const Chip = styled.div`
