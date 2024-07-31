@@ -1,10 +1,15 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 export const AbouteMeContainer = styled.section`
   padding: 120px 0;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+    padding: 120px 20px;
+  }
 
   h3 {
     color: ${colors.primaryText};

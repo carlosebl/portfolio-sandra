@@ -11,6 +11,21 @@ export const IntroContainer = styled.section`
     padding: 116px 20px;
   }
 
+  h1 {
+    color: ${colors.secondaryText};
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.08px;
+    margin-bottom: 12px;
+    margin-top: 80px;
+    display: none;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      display: block;
+    }
+  }
+
   h3 {
     color: ${colors.secondaryText};
     font-size: 16px;
@@ -19,6 +34,10 @@ export const IntroContainer = styled.section`
     letter-spacing: 0.08px;
     margin-bottom: 12px;
     margin-top: 80px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-top: 0;
+    }
   }
 `
 
