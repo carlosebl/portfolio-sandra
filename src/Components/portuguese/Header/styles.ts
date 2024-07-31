@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
 
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 100%;
-    padding: 20px;
+    padding: 8px;
   }
 
   h1 {
@@ -27,11 +27,10 @@ export const HeaderContainer = styled.header`
     font-weight: normal;
     line-height: 32px;
     letter-spacing: 0.1px;
-    margin-right: 800px;
 
     @media (max-width: ${breakpoints.tablet}) {
-      display: none;
-      margin-right: 0;
+      font-size: 14px;
+      margin-right: 16px;
     }
   }
 
@@ -50,7 +49,7 @@ export const HeaderContainer = styled.header`
     letter-spacing: 0.1px;
 
     @media (max-width: ${breakpoints.tablet}) {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     &:hover {
@@ -64,6 +63,10 @@ export const MainMenu = styled.ul`
 
   li {
     margin-right: 48px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-right: 20px;
+    }
   }
 `
 
@@ -71,6 +74,10 @@ export const LanguageMenu = styled.ul`
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    gap: 8px;
+  }
 `
 
 export const LanguageMenuItem = styled.li<Props>`
@@ -87,7 +94,7 @@ export const LanguageMenuItem = styled.li<Props>`
     letter-spacing: ${(props) => (props.isActive ? '0.14px' : '0.1px')};
 
     @media (max-width: ${breakpoints.tablet}) {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 `

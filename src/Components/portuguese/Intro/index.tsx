@@ -13,7 +13,6 @@ const Intro = () => {
 
   return (
     <IntroContainer>
-      <h1>Sandra Bordini</h1>
       <h3>Senior product designer</h3>
       <SloganContainer>
         <Asterisco

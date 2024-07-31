@@ -11,21 +11,6 @@ export const IntroContainer = styled.section`
     padding: 116px 20px;
   }
 
-  h1 {
-    color: ${colors.secondaryText};
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
-    letter-spacing: 0.08px;
-    margin-bottom: 12px;
-    margin-top: 80px;
-    display: none;
-
-    @media (max-width: ${breakpoints.tablet}) {
-      display: block;
-    }
-  }
-
   h3 {
     color: ${colors.secondaryText};
     font-size: 16px;
@@ -62,7 +47,7 @@ export const Asterisco = styled.img`
   margin-left: 490px;
 
   @media (max-width: ${breakpoints.desktop}) {
-    margin-left: 300px;
+    margin-left: 280px;
   }
 `
 
@@ -71,6 +56,6 @@ export const Coracao = styled.img`
   margin-left: 856px;
 
   @media (max-width: ${breakpoints.desktop}) {
-    margin-left: 300px;
+    margin-left: 280px;
   }
 `
