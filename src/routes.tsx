@@ -1,4 +1,5 @@
-import { Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
 import Home from './Pages/Home'
 import HomeEnglish from './Pages/HomeEnglish'
@@ -13,8 +14,17 @@ import DesignSystemEnglish from './Pages/DesignSystemEnglish'
 import Contact from './Pages/Contact'
 import ContactEnglish from './Pages/ContactEnglish'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 const PageRoutes = () => (
   <Routes>
+    {ScrollToTop()}
     <Route path="/" element={<Home />} />
     <Route path="/en" element={<HomeEnglish />} />
     <Route path="/projects" element={<Projects />} />

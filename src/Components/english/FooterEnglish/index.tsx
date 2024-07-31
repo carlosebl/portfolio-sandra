@@ -5,7 +5,7 @@ import mail from '../../../assets/images/mail2.svg'
 
 const FooterEnglish = () => (
   <FooterContainer>
-    <h3>Contact me:</h3>
+    <h3>Contact me</h3>
     <FooterContacts>
       <div>
         <img src={linkedin} alt="Linkedin" />
